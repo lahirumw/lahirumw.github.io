@@ -15,7 +15,7 @@ In this blog, we’ll explore the 12 factors with a focus on microservices archi
 
 **1. Codebase: One Codebase, Multiple Deploys**
 
-\Principle: A microservice should have a single codebase that can be deployed to multiple environments.\
+*Principle: A microservice should have a single codebase that can be deployed to multiple environments.*
 
 You would deploy this same codebase to multiple environments (e.g., dev, staging, prod), while environment-specific configurations would be kept external.
 
@@ -31,7 +31,7 @@ java -jar target/user-service.jar --spring.profiles.active=prod
 
 **2. Dependencies: Explicitly Declare Dependencies**
 
-\\Principle: Use a dependency management tool to explicitly declare all dependencies.\\
+*Principle: Use a dependency management tool to explicitly declare all dependencies.*
 
 Example (Maven): In Spring Boot, dependencies are managed through pom.xml (Maven) or build.gradle (Gradle). All dependencies should be declared, and
 the project should be able to be built by anyone with the right environment.
@@ -53,7 +53,7 @@ This ensures that running mvn clean install will download all the required depen
 
 **3. Config: Store Configuration in the Environment**
 
-\\Principle: Configuration should be stored in the environment, not in the code.\\
+*Principle: Configuration should be stored in the environment, not in the code.*
 
 Example: In Spring Boot, environment-specific configurations are stored in external property files (application.properties or application.yml), or
 injected via environment variables.
@@ -79,7 +79,7 @@ java -jar target/user-service.jar
 
 **4. Backing Services: Treat Backing Services as Attached Resources**
 
-\\Principle: Treat backing services (like databases, queues) as attached resources.\\
+*Principle: Treat backing services (like databases, queues) as attached resources.*
 
 Example: A Spring Boot microservice connecting to PostgreSQL can be configured to connect to a local database in development and an external
 managed database in production by simply changing the connection string:
@@ -94,7 +94,7 @@ spring.datasource.url=jdbc:postgresql://rds.amazonaws.com:5432/proddb
 
 **5. Build, Release, Run: Strictly Separate Build and Run Stages**
 
-\\Principle: Separate the build, release, and run stages.\\
+*Principle: Separate the build, release, and run stages.*
 
 Example: With Spring Boot, you can define separate Maven build profiles and Docker configurations for different environments.
 
@@ -120,7 +120,7 @@ The service logic remains the same, and only the resource (database URL) changes
 
 **6. Processes: Execute the App as One or More Stateless Processes**
 
-\\Principle: Microservices should be stateless, with state stored externally.\\
+*Principle: Microservices should be stateless, with state stored externally.*
 
 Example: In Spring Boot, keep services stateless by storing any session data in external systems like Redis or databases. Use annotations
 like @Transactional to manage database transactions but avoid holding state in the service itself.
@@ -142,7 +142,7 @@ To make this stateless, ensure any state (such as user session) is stored in an 
 
 **7. Port Binding: Export Services via Port Binding**
 
-\\Principle: The service should bind to a specific port and run independently.\\
+*Principle: The service should bind to a specific port and run independently.*
 
 Example: In Spring Boot, the service binds to a port via configuration in application.properties or through environment variables:
 
@@ -161,7 +161,7 @@ This allows your service to bind to any available port and communicate via HTTP.
 
 **8. Concurrency: Scale Out via the Process Model**
 
-\\Principle: Scale microservices by running multiple instances.\\
+*Principle: Scale microservices by running multiple instances.*
 
 Example: You can scale a Spring Boot microservice by deploying multiple instances in Docker or Kubernetes.
 
@@ -186,7 +186,7 @@ This deployment creates three replicas of the user-service, all stateless and ca
 
 **9. Disposability: Maximize Robustness with Fast Startup and Graceful Shutdown**
 
-\\Principle: The service should start quickly and shut down gracefully.\\
+*Principle: The service should start quickly and shut down gracefully.*
 
 Example: In Spring Boot, you can ensure graceful shutdown by listening for termination signals like SIGTERM:
 
@@ -201,7 +201,7 @@ This ensures that the microservice can complete any in-progress requests before 
 
 **10. Dev/Prod Parity: Keep Development, Staging, and Production as Similar as Possible**
 
-\\Principle: Ensure parity between development, staging, and production environments.\\
+*Principle: Ensure parity between development, staging, and production environments.*
 
 Example: Use Docker to maintain consistency between environments. You can build the same Docker image for all environments and configure them using environment-specific settings.
 
@@ -216,7 +216,7 @@ This ensures consistency between how the app runs locally and in production.
 
 **11. Logs: Treat Logs as Event Streams**
 
-\\Principle: Microservices should stream logs to stdout or stderr.\\
+*Principle: Microservices should stream logs to stdout or stderr.*
 
 Example: In Spring Boot, you can configure logs to be output to the console, and use tools like ELK or AWS CloudWatch to aggregate and analyze logs.
 
@@ -230,7 +230,7 @@ Then, a log aggregator tool (such as ELK) can capture these logs for later analy
 
 **12. Admin Processes: Run Admin/Management Tasks as One-off Processes**
 
-\\Principle: Admin or maintenance tasks should be run as one-off processes.\\
+*Principle: Admin or maintenance tasks should be run as one-off processes.*
 
 Example: For database migrations, use tools like Flyway or Liquibase to run migrations as separate tasks:
 
