@@ -85,7 +85,8 @@ git pull origin <branch-name>
 **Branching and Merging**
 
 **Working with Branches**
-**Create a new branch**
+
+Create a new branch
 
 ~~~
 git branch <branch-name>
