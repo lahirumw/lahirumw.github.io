@@ -490,3 +490,5 @@ In this example, the FileSystemComponent interface acts as the component, the Fi
 Conclusion: Java design patterns are essential for writing robust, maintainable, and scalable code. By understanding and applying these patterns, you can improve your coding skills and create software that is easier to maintain and extend. Remember to use patterns judiciously, keep it simple, follow the SOLID principles, and test thoroughly.
 
 That’s a wrap for today! Stay tuned for our next installment, where we’ll dive into the world of Behavioral Design Patterns.
+
+[Mastering Design Patterns with Java — II](https://lahirumw.github.io/2025-01-26-design-pattern-java-2/)
