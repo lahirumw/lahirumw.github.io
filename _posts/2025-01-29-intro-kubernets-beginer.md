@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Introduction to Kubernetes (K8s) : Beginner Tutorial
+title: Introduction to Kubernetes (K8s) - Beginner Tutorial
 subtitle: 
 cover-img: 
 thumbnail-img: 
