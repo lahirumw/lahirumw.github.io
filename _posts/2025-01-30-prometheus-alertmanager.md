@@ -9,7 +9,7 @@ tags: [Alertmanager, Prometheus, Grafana, Monitoring, Alerting]
 author: keylearn
 ---
 
-In a previous blog post (link to the blog post), we discussed how to set up container and host metrics monitoring using cAdvisor, Node Exporter, and Prometheus. Now, let’s take it a step further by implementing an alerting system with Prometheus Alertmanager. The goal is to receive timely notifications about the system’s health and performance.
+In a [previous blog post](https://lahirumw.github.io/2025-01-30-monit-cadvisor-node-exp-prome/), we discussed how to set up container and host metrics monitoring using cAdvisor, Node Exporter, and Prometheus. Now, let’s take it a step further by implementing an alerting system with Prometheus Alertmanager. The goal is to receive timely notifications about the system’s health and performance.
 
 ## Understanding Alertmanager
 
@@ -73,7 +73,7 @@ receivers:
 ~~~
 	 
 This configuration directs Alertmanager to send alerts to a Slack channel named `#testing-webhook`. Adjust the configuration based on your preferred channels and integrations.
-You can find about creating slack incoming webhook using this link — https://api.slack.com/messaging/webhooks
+You can find about creating slack incoming webhook using this [link](https://api.slack.com/messaging/webhooks)
 
 **Prometheus Configuration**
 
