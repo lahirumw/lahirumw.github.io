@@ -13,7 +13,7 @@ author: keylearn
 
 In the dynamic world of containerized applications, effective monitoring is the key to ensuring optimal performance and reliability. This blog post dives into the powerful trio of monitoring tools — cAdvisor, Node Exporter, and Prometheus — and explains how to use them to gain valuable insights into container and host metrics. Additionally, we’ll explore a Docker Compose setup that streamlines the deployment of Grafana, Prometheus, cAdvisor, and Node Exporter.
 
-** Understanding the Components:**
+**Understanding the Components:**
 
 **cAdvisor (Container Advisor):**
 
@@ -138,31 +138,31 @@ The provided Docker Compose file simplifies the deployment of a monitoring stack
 
 **grafana:**
 
-Image: Grafana version 10.0.3.
-Exposes Grafana on port 3005.
+Image: Grafana version 10.0.3. 
+Exposes Grafana on port 3005. 
 Mounts a configuration file for Grafana datasources and a volume for Grafana data persistence.
 
 **prometheus:**
 
-Image: Prometheus version 2.46.0.
-Exposes Prometheus on port 9090.
-Mounts a configuration file for Prometheus settings and a volume for data persistence.
+Image: Prometheus version 2.46.0. 
+Exposes Prometheus on port 9090. 
+Mounts a configuration file for Prometheus settings and a volume for data persistence. 
 Defines various command-line options for configuration, storage, and web settings.
 
 **cadvisor:**
 
-Image: cAdvisor version 0.47.2.
-Runs in privileged mode and exposes cAdvisor on port 8080.
+Image: cAdvisor version 0.47.2. 
+Runs in privileged mode and exposes cAdvisor on port 8080. 
 Configures volume mounts for essential paths to gather container metrics.
 
 **nodeexporter:**
 
-Image: Node Exporter version 1.6.1.
+Image: Node Exporter version 1.6.1. 
 Exposes Node Exporter on port 9100.
 
 **Volumes:**
 
-grafana-data: Persists Grafana configuration and data.
+grafana-data: Persists Grafana configuration and data. 
 prom-data: Persists Prometheus data.
 
 **Running the Docker Compose:**
