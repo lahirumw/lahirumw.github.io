@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Simplifying Prometheus Alerting with Alertmanager
+title: Simplifying Container and Host Metrics Monitoring with cAdvisor, Node Exporter, and Prometheus
 subtitle: 
 cover-img: 
 thumbnail-img: 
