@@ -149,11 +149,11 @@ groups:
       description: "Container Memory usage is above 80%\n  VALUE = {{ $value }}\n  LABELS = {{ $labels }}"
 ~~~
 
-For more alerting ideas and configurations, check out the Awesome Prometheus Alerts repository.
+For more alerting ideas and configurations, check out the [Awesome Prometheus Alerts](https://samber.github.io/awesome-prometheus-alerts/) repository.
 
 **Bringing It All Together**
 
-Integrate the Alertmanager service into your Docker Compose setup by adding the following to your docker-compose.yml file. We use the same docker compose file posted in this blog post.
+Integrate the Alertmanager service into your Docker Compose setup by adding the following to your docker-compose.yml file. We use the same docker compose file posted in [this blog post](https://blog.devops.dev/simplifying-container-and-host-metrics-monitoring-with-cadvisor-node-exporter-and-prometheus-d8f486b0060b).
 
 ~~~
 services:
