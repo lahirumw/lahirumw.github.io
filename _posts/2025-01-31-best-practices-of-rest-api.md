@@ -3,7 +3,7 @@ layout: post
 title: Best Practices for Writing REST APIs
 subtitle: 
 cover-img:
-thumbnail-img: /assets/img/rest-api-1.webp
+thumbnail-img: 
 share-img: /assets/img/path.jpg
 tags: [Rest Api, Best Practices, Code Quality, Coding Standards, Java]
 author: keylearn
