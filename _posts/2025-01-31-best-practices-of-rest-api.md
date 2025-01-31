@@ -2,8 +2,8 @@
 layout: post
 title: Best Practices for Writing REST APIs
 subtitle: 
-cover-img: /assets/img/rest-api-1.webp
-thumbnail-img: 
+cover-img:
+thumbnail-img: /assets/img/rest-api-1.webp
 share-img: /assets/img/path.jpg
 tags: [Rest Api, Best Practices, Code Quality, Coding Standards, Java]
 author: keylearn
@@ -102,7 +102,7 @@ public ResponseEntity<List<User>> getAllUsers(@RequestParam(defaultValue = "0") 
 }
 ~~~
 
-##8. Authentication and Authorization
+## 8. Authentication and Authorization
 
 Implement secure authentication mechanisms and enforce access controls.
 
@@ -181,7 +181,7 @@ Ensuring code quality and security is paramount in REST API development to mitig
 
 2. Use Jacoco reports to identify areas with insufficient test coverage and enhance the test suite accordingly.
 
-**Continuous Integration/Continuous Deployment (CI/CD):**
+**Continuous Integration and Continuous Deployment (CI/CD):**
 
 1. Integrate code quality and security checks into the CI/CD pipeline to automate the analysis and ensure that every code commit undergoes these assessments.
 
