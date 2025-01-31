@@ -87,7 +87,7 @@ public class GlobalExceptionHandler {
 }
 ~~~
 
-[More details about exception handling can be found in this post](https://medium.com/@keylearn/handling-exceptions-in-spring-boot-application-b3ab513f92d).
+[More details about exception handling can be found in this post](https://lahirumw.github.io/2025-01-31-exception-handling-spring-boot/).
 
 ## 7. Pagination
 
