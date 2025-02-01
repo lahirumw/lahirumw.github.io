@@ -131,7 +131,7 @@ public class SwaggerConfig {
 ## 10. Testing
 
 Implement thorough testing, including unit tests, integration tests, and endpoint testing. Testing is an essential phase in REST API development, serving multiple crucial purposes. It identifies and rectifies bugs, ensures functional accuracy, enhances reliability, verifies compatibility, optimizes performance, assures security, validates documentation, supports collaboration, improves code quality, and, ultimately, meets user expectations. Thorough testing is not just a development phase; it’s a fundamental practice that ensures the robustness, reliability, and success of a REST API.
-[Look this post for more details about unit testing](http://medium.com/@keylearn/spring-boot-unit-test-c3affa0a9805).
+[Look this post for more details about unit testing](https://lahirumw.github.io/2025-02-01-spring-boot-junit/).
 
 ## 11. Logging
 
