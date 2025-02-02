@@ -38,7 +38,7 @@ Repeat this process for VM 2 and VM 3, creating folders 7002 and 7003 for VM 2, 
 
 **Step 3: Download Redis**
 
-You need to download the latest Redis version. Use wget to download it from the official Redis website:
+You need to download the latest Redis version. Use `wget` to download it from the official Redis website:
 
 ~~~
 wget https://download.redis.io/redis-stable.tar.gz
@@ -89,7 +89,7 @@ pidfile /var/run/redis_7000.pid
 maxmemory 256mb 
 ~~~
 
-Note: requirepass and [Redis ACL](https://redis.io/docs/latest/operate/oss_and_stack/management/security/acl/) (Access Control Lists) authentication are two different methods of securing a Redis instance. For this example we are using requirepass for authentication. ACL is a more modern and robust method of access control in Redis, introduced in Redis version 6.0.
+Note: `requirepass` and [Redis ACL](https://redis.io/docs/latest/operate/oss_and_stack/management/security/acl/) (Access Control Lists) authentication are two different methods of securing a Redis instance. For this example we are using `requirepass` for authentication. ACL is a more modern and robust method of access control in Redis, introduced in Redis version 6.0.
 
 **Step 7: Start Redis Servers**
 
