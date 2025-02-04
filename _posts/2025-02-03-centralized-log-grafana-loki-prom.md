@@ -114,7 +114,7 @@ networks:
 
 Let’s break down each part of the configuration:
 
-1. Grafana Service:
+**Grafana Service:**
 
 `image`: Specifies the Grafana Docker image and its version.
 
@@ -139,7 +139,7 @@ datasources:
 	
 `networks`: Connects the service to the "blog" network, enabling communication between services.
 
-2. Loki Service:
+**Loki Service:**
 
 `image`: Specifies the Loki Docker image and its version.
 
@@ -203,9 +203,9 @@ analytics:
 
 `networks`: Connects the service to the "blog" network.
 
-Find more about loki in [here](https://blog.devops.dev/loki-bd6464cca6bd).
+Find more about loki in [here](https://lahirumw.github.io/2025-02-04-loki/).
 
-3. Promtail Service:
+**Promtail Service:**
 
 `image`: Specifies the Promtail Docker image and its version.
 
@@ -252,7 +252,7 @@ scrape_configs:
 
 You can find more about promtail in [here](https://blog.devops.dev/configuring-promtail-log-agent-386ca5886d7c).
 
-4. Nginx Service:
+**Nginx Service:**
 
 `image`: Specifies the Nginx Docker image to use.
 
