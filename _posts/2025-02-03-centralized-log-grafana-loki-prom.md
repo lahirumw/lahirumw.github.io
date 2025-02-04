@@ -250,7 +250,7 @@ scrape_configs:
 
 `networks`: Connects the service to the "blog" network.
 
-You can find more about promtail in [here](https://blog.devops.dev/configuring-promtail-log-agent-386ca5886d7c).
+You can find more about promtail in [here](https://lahirumw.github.io/2025-02-04-promtail/).
 
 **Nginx Service:**
 
