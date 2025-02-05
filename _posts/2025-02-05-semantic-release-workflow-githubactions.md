@@ -23,6 +23,7 @@ The key idea behind Semantic Release is to analyze the commit history in a versi
 
 By default, semantic-release uses [Angular Commit Message Conventions](https://github.com/angular/angular/blob/main/CONTRIBUTING.md#-commit-message-format). The commit message format can be changed with the preset or config options of the @semantic-release/commit-analyzer and @semantic-release/release-notes-generator plugins.
 
+~~~
 **Commit Message Header**
 
 <type>(<scope>): <short summary>
@@ -36,6 +37,7 @@ By default, semantic-release uses [Angular Commit Message Conventions](https://g
   │                          devtools
   │
   └─⫸ Commit Type: build|ci|docs|feat|fix|perf|refactor|test
+~~~
   
 Type
 
