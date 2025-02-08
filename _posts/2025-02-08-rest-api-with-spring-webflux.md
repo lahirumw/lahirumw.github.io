@@ -57,7 +57,7 @@ The use of an event loop allows Spring WebFlux to handle large volumes of reques
 
 Now that we have discussed about Spring WebFlux, let’s create an API to gain a deeper understanding of how it works in practice. By building an API, we can explore the various components of Spring WebFlux in more detail.
 
-Create a new Spring Boot project with the “Reactive Web” dependency using the Spring Initializr.
+Create a new Spring Boot project with the Reactive Web dependency using the Spring Initializr.
 
 ~~~
 <dependency>
