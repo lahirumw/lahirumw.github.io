@@ -25,11 +25,11 @@ Horizontal and Vertical partition are two main categories of partitioning.
 
 **Types of Partitions belongs to horizontal partitioning**
 
-1. Range
+1. [Range](https://lahirumw.github.io/2025-02-09-postgresql-range-table-partition/)
 
-2. List
+2. [List](https://lahirumw.github.io/2025-02-09-postgresql-list-table-partition/)
 
-3. Hash
+3. [Hash](https://lahirumw.github.io/2025-02-09-postgresql-hash-table-partition/)
 
 **Important**
 
