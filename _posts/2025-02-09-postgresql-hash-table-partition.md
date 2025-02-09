@@ -5,7 +5,7 @@ subtitle:
 cover-img:
 thumbnail-img: 
 share-img: /assets/img/path.jpg
-tags: []
+tags: [Hash Partition, Postgresql, Table Partitioning, Query Optimization, Postgres Partition]
 author: keylearn
 ---
 
